@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script type="text/javascript">
+
+if (localStorage['pageCount'])
+	{
+	localStorage['pageCount']=Number(localStorage['pageCount']) +1;
+	}
+else
+	{
+	localStorage.setItem("pageCount","1");
+	}
+document.write("Visits: " + localStorage['pageCount'] + " time(s).");
+
+</script> 
+
+<p>Refresh the page to see the counter increase.</p>
+
+<p>Close the browser window, and try again, and the counter will continue.</p>
+</body>
+</html>
